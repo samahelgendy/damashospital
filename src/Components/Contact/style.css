@@ -1,0 +1,143 @@
+
+.drop {
+    padding: 50px 0;
+    text-align: center
+}
+
+.drop .drop-title {
+    font-size: 60px;
+    margin-bottom: 30px
+}
+
+.drop .drop-title span {
+    font-weight: normal;
+}
+
+.drop form {
+    width: 70%;
+    width: 100%;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+.drop form input {
+    box-sizing: border-box;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+}
+
+
+
+.drop form .form-input input {
+    width: 49%;
+}
+
+.drop form .form-input input[type=text] {
+    float: left;
+    position: relative;
+    left: 0;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.drop form .form-input input[type=email] {
+    float: right;
+    position: relative;
+    left: 0;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+@media (max-width: 575px){
+.drop form .form-input input[type=email] {
+ 
+    position: relative;
+    left: 0px;
+}
+}
+.drop form input.sub {
+    width: 100%;
+    margin-left: 25px;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.drop form textarea {
+    width: 100%;
+    outline: 0;
+    font-size: 25px;
+    height: 250px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.drop form input[type=submit] {
+    width: 60%;
+    cursor: pointer;
+    border: none;
+    margin: auto;
+    background-color: rgb(16, 77, 101);
+    color: white;
+    font-size: 18px;
+    padding: 10px 0px;
+    font-size: 18px;
+    transition: 0.5s;
+    margin-top: 25px;
+    border-radius: 6px;
+}
+.drop form input[type=submit]:hover{
+    background-color: rgb(182, 215, 226);
+    color: rgb(16, 77, 101);
+}
+@media (max-width:575px) {
+    .drop .drop-title {
+        font-size: 40px
+    }
+    
+    .drop form .form-input input {
+        width: 100%
+    }
+    
+    .drop form {
+        width: 90%
+    }
+}
+h4.samah{
+    position: relative;
+    top: 25px;
+    -webkit-text-fill-color: rgb(214, 229, 235);
+    -webkit-text-stroke: 1px rgb(16, 77, 101);
+    border: 1px solid rgb(16, 77, 101) ;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 70px auto;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+}
+
+h4::before{
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: translateX(-250px);
+    width: 100%;
+    transition: 0.5s;
+}
+h4:hover::before{
+    transform: translateX(0);
+}
+.line:hover{
+    transform: translateX(250px);
+    display: block;
+    transition: 0.5s;
+}
